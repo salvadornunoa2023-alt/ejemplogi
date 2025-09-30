@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Carrusel de imágenes aleatorias</title>
+  <link rel="stylesheet" href="colorin/col.css">
+</head>
+<body>
+  <div class="carousel" id="carousel">
+    <div class="viewport">
+      <div class="slides" id="slides" aria-live="polite"></div>
+    </div>
+
+    <div class="controls">
+      <div style="display:flex;align-items:center;padding-left:8px">
+        <button class="btn" id="prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+          Prev
+        </button>
+      </div>
+      <div style="display:flex;align-items:center;padding-right:8px">
+        <button class="btn" id="next" aria-label="Siguiente">
+          Next
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="dots" id="dots"></div>
+      <div class="actions">
+        <div class="small">Autoplay</div>
+        <button class="btn" id="playPause">Pause</button>
+        <button class="btn" id="shuffle">Barajar</button>
+        <button class="btn" id="reload">Cargar nuevas</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="java.script/java.js"></script>
+</body>
+</html>
